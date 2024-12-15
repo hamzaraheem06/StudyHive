@@ -5,17 +5,9 @@ import { useNavigate } from "react-router-dom";
 function Hero() {
   const navigate = useNavigate();
 
-  let onclickHandler = () => {
-    navigate("/signup");
-  };
-
-  let onclickHandler2 = () => {
-    navigate("/about");
-  };
-
   return (
-    <div className="my-20 flex justify-center items-center flex-col gap-14 ">
-      <div className=" max-w-[768px] flex justify-center items-center flex-col gap-4">
+    <div className="mt-40 mb-20 flex justify-center items-center flex-col gap-20 ">
+      <div className=" max-w-[850px] flex justify-center items-center flex-col gap-4">
         <h1 className="text-primary font-bold text-4xl">
           Study Smarter, Collaborate Better
         </h1>
@@ -28,10 +20,17 @@ function Hero() {
         <div className="flex gap-4">
           <Button
             text="Get Started"
-            onClickHandler={onclickHandler}
+            onClickHandler={() => {
+              navigate("/signup");
+            }}
             btnType="btn-primary"
           />
-          <Button onClickHandler={onclickHandler2} text="Learn more" />
+          <Button
+            onClickHandler={() => {
+              navigate("/about");
+            }}
+            text="Learn more"
+          />
         </div>
       </div>
 

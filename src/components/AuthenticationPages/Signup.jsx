@@ -32,7 +32,7 @@ function Signup() {
       {/* {error && <InvalidError error={error} />} */}
 
       <div className="flex flex-col gap-2">
-        <h1 className="text-2xl font-bold text-neutral ">
+        <h1 className="text-2xl font-bold text-primary ">
           Welcome to our Website!
         </h1>
         <p className="text-sm opacity-65">Create an account now</p>

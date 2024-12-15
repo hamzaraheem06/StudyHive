@@ -1,6 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+CO+Guides&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: "Nunito", ui-sans-serif;
+}
+
+.anton {
+  font-family: "Anton";
+}
+
+.Playwrite {
+  font-family: "Playwrite CO Guides", cursive;
+}
 
 .gradient-bg {
   background-color: #a599ff;
@@ -20,4 +33,17 @@
 .custom-dimension {
   width: 1260px;
   hieght: 580px;
+}
+
+.glassy {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.glassyDark {
+  background: rgb(16 15 15 / 20%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
 }

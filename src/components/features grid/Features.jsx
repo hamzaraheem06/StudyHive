@@ -2,8 +2,8 @@ import React from "react";
 
 function Features() {
   return (
-    <div className="flex justify-center items-center flex-col gap-14 py-10 border-y">
-      <div className=" max-w-[768px] flex justify-center items-center flex-col gap-2">
+    <div className="flex justify-center items-center flex-col gap-14 py-10 border-t">
+      <div className=" max-w-[850px] flex justify-center items-center flex-col gap-2">
         <p className="text-center text-gray-500  opacity-60 font-semibold">
           Explore a range of innovative features tailored to simplify group
           studies, enhance collaboration, and streamline resource sharing—all in
@@ -11,7 +11,7 @@ function Features() {
         </p>
       </div>
 
-      <ul className="max-w-[768px] timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+      <ul className="max-w-[850px] timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         <li>
           <div className="timeline-middle">
             <svg
@@ -28,7 +28,7 @@ function Features() {
             </svg>
           </div>
           <div className="timeline-start text-gray-400 font-medium mb-10 md:text-end">
-            <div className="text-2xl font-bold text-primary">
+            <div className="text-2xl text-primary anton">
               Real-Time Collaboration
             </div>
             Collaborate effortlessly with your study group through a platform
@@ -55,9 +55,7 @@ function Features() {
             </svg>
           </div>
           <div className="timeline-end text-gray-400 font-medium mb-10">
-            <div className="text-2xl font-bold text-primary">
-              Group Management
-            </div>
+            <div className="text-2xl text-primary anton">Group Management</div>
             Create and manage study groups effortlessly with intuitive tools
             designed for effective collaboration. Easily organize group members,
             assign specific roles, and track progress to stay on top of goals
@@ -82,9 +80,7 @@ function Features() {
             </svg>
           </div>
           <div className="timeline-start text-gray-400 font-medium mb-10 md:text-end">
-            <div className="text-2xl font-bold text-primary">
-              Smart Scheduling
-            </div>
+            <div className="text-2xl text-primary anton">Smart Scheduling</div>
             Plan your study sessions seamlessly with built-in scheduling tools
             designed for convenience and organization. Sync group calendars to
             avoid conflicts, set reminders for important deadlines, and ensure
