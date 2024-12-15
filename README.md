@@ -1,8 +1,5 @@
-# React + Vite
+![Logo](./src/assets/logo.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Study Hive
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Study Hive is your ultimate online group study platform, designed to bring students together in a collaborative and engaging virtual space. With tools for real-time interaction, and group management, it simplifies the way you connect, learn, and grow. Whether you’re preparing for exams, working on group projects, or brainstorming ideas, Study Hive transforms your study sessions into efficient, productive, and enjoyable experiences.
