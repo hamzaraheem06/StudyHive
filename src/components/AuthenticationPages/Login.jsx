@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { login as authLogin } from "../../store/authSlice";
-import { Input, Button } from "../index";
+import { Input, Button, AlertError } from "../index";
 import { useDispatch } from "react-redux";
 import authService from "../../appwrite/auth";
 import { useForm } from "react-hook-form";
 
 function Login() {
-  //   const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const { register, handleSubmit } = useForm();
   const [error, setError] = useState("");
@@ -30,7 +30,7 @@ function Login() {
 
   return (
     <div className="w-full flex max-w-80 flex-col gap-5 justify-between p-2">
-      {/* {error && <AlertError error={error} />} */}
+      {error && <AlertError error={error} />}
 
       <div className="flex flex-col gap-2">
         <h1 className="text-2xl font-bold text-primary ">Welcome Back !</h1>
@@ -68,7 +68,7 @@ function Login() {
           </Link>
         </p>
         <div className="py-1">
-          <Button btnType="btn-primary" text="Login" onClickHandler={login} />
+          <Button btnType="btn-primary" text="Login" type="submit" />
         </div>
       </form>
     </div>

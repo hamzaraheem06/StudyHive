@@ -1,35 +1,35 @@
 import React, { useState } from "react";
-import { Input, Button } from "../index";
+import { Input, Button, InvalidError } from "../index";
 import { Link, useNavigate } from "react-router-dom";
-// import { useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { login as authLogin } from "../../store/authSlice";
 import authService from "../../appwrite/auth";
 import { useForm } from "react-hook-form";
 
 function Signup() {
   const navigate = useNavigate();
-  //   const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const { register, handleSubmit } = useForm();
-  //   const [error, setError] = useState("");
+  const [error, setError] = useState("");
 
   const create = async (data) => {
-    // setError("");
+    setError("");
     try {
       const userData = await authService.createAccount(data);
       if (userData) {
         const userData = await authService.getCurrentUser();
         if (userData) dispatch(authLogin(userData));
-        // navigate("/");
+        navigate("/");
       }
     } catch (error) {
-      // setError(error.message);
+      setError(error.message);
     }
   };
 
   return (
     <div className="w-full flex max-w-80 flex-col gap-5 justify-between p-2">
-      {/* {error && <InvalidError error={error} />} */}
+      {error && <InvalidError error={error} />}
 
       <div className="flex flex-col gap-2">
         <h1 className="text-2xl font-bold text-primary ">
@@ -83,11 +83,7 @@ function Signup() {
           </Link>
         </p>
         <div className="py-1">
-          <Button
-            text="Create account"
-            btnType="btn-primary"
-            onClickHandler={create}
-          />
+          <Button text="Create account" btnType="btn-primary" type="submit" />
         </div>
       </form>
     </div>

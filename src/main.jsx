@@ -2,7 +2,10 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./store/store.js";
 import { Homepage, LogInPage, SignUpPage } from "./pages/index";
+import { Protected } from "./components/index.js";
 
 const router = createBrowserRouter([
   {
@@ -15,44 +18,26 @@ const router = createBrowserRouter([
       },
       {
         path: "/login",
-        element: <LogInPage />,
+        element: (
+          <Protected authentication={false}>
+            <LogInPage />
+          </Protected>
+        ),
       },
       {
         path: "/signup",
-        element: <SignUpPage />,
+        element: (
+          <Protected authentication={false}>
+            <SignUpPage />
+          </Protected>
+        ),
       },
-      //   {
-      //     path: "/all-posts",
-      //     element: (
-      //       <AuthLayout authentication>
-      //         <AllPosts />
-      //       </AuthLayout>
-      //     ),
-      //   },
-      //   {
-      //     path: "/add-post",
-      //     element: (
-      //       <AuthLayout authentication>
-      //         <AddPostPage />
-      //       </AuthLayout>
-      //     ),
-      //   },
-      //   {
-      //     path: "/edit-post/:slug",
-      //     element: (
-      //       <AuthLayout authentication>
-      //         <EditPostPage />
-      //       </AuthLayout>
-      //     ),
-      //   },
-      //   {
-      //     path: "/post/:slug",
-      //     element: <Post />,
-      //   },
     ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <Provider store={store}>
+    <RouterProvider router={router} />
+  </Provider>
 );

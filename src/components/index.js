@@ -9,6 +9,7 @@ import Input from "./Input";
 import AlertError from "./toast/alert";
 import SuccessMessage from "./toast/success";
 import InvalidError from "./toast/invalid";
+import Protected from "./AuthenticationPages/Protected";
 
 export {
   Header,
@@ -21,5 +22,6 @@ export {
   Signup,
   SuccessMessage,
   AlertError,
+  Protected,
   InvalidError,
 };

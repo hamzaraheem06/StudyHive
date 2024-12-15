@@ -1,9 +1,53 @@
-import React, { useState } from "react";
-import { Button } from "../index";
-import { Link } from "react-router";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router";
+import authService from "../../appwrite/auth";
+import { logout } from "../../store/authSlice";
 
 function Header() {
-  const [isLogged, setIsLogged] = useState(true);
+  const userStatus = useSelector((state) => state.auth.status); // state.nameofslice.status
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const logoutHandler = () => {
+    authService
+      .logOut()
+      .then(() => {
+        dispatch(logout());
+      })
+      .catch((error) => {
+        console.log("Appwrite Service:: error :: logOut :: ", error);
+      });
+  };
+
+  const navItems = [
+    {
+      name: "Home",
+      slug: "/",
+      active: true,
+    },
+    {
+      name: "Login",
+      slug: "/login",
+      active: !userStatus,
+    },
+    {
+      name: "Signup",
+      slug: "/signup",
+      active: !userStatus,
+    },
+    {
+      name: "Groups",
+      slug: "/group",
+      active: userStatus,
+    },
+    {
+      name: "Communities",
+      slug: "/communities",
+      active: userStatus,
+    },
+  ];
 
   return (
     <div className="navbar shadow bg-base-100 fixed glassy darkTheme:glassyDark z-10 ">
@@ -29,15 +73,19 @@ function Header() {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Groups</a>
-            </li>
-            <li>
-              <a>Communities</a>
-            </li>
+            {navItems.map((item) =>
+              item.active ? (
+                <li key={item.name}>
+                  <button
+                    onClick={() => {
+                      navigate(item.slug);
+                    }}
+                  >
+                    {item.name}
+                  </button>
+                </li>
+              ) : null
+            )}
           </ul>
         </div>
       </div>
@@ -74,7 +122,7 @@ function Header() {
           </svg>
         </label>
 
-        {isLogged ? (
+        {userStatus ? (
           <div className="flex items-center">
             <button className="btn btn-ghost btn-circle">
               <svg
@@ -136,15 +184,15 @@ function Header() {
                   <a>Settings</a>
                 </li>
                 <li>
-                  <a>Logout</a>
+                  <a onClick={logoutHandler}>Logout</a>
                 </li>
               </ul>
             </div>
           </div>
         ) : (
           <div className="flex gap-2">
-            <Button text="Sign In" />
-            <Button text="Sign Up" btnType="btn-primary" />
+            {/* <Button text="Sign In" />
+            <Button text="Sign Up" btnType="btn-primary" /> */}
           </div>
         )}
       </div>
