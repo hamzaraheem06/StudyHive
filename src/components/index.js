@@ -3,5 +3,8 @@ import Button from "./Button";
 import Hero from "./Hero";
 import Footer from "./footer/Footer";
 import Features from "./features grid/Features";
+import Login from "./AuthenticationPages/Login";
+import Signup from "./AuthenticationPages/Signup";
+import Input from "./Input";
 
-export { Header, Button, Hero, Footer, Features };
+export { Header, Button, Hero, Footer, Features, Login, Input, Signup };

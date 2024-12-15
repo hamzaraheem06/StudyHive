@@ -1,7 +1,18 @@
 import React from "react";
 import { Button } from "./index";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigate = useNavigate();
+
+  let onclickHandler = () => {
+    navigate("/signup");
+  };
+
+  let onclickHandler2 = () => {
+    navigate("/about");
+  };
+
   return (
     <div className="my-20 flex justify-center items-center flex-col gap-14 ">
       <div className=" max-w-[768px] flex justify-center items-center flex-col gap-4">
@@ -15,12 +26,16 @@ function Hero() {
           provide the tools you need to succeed—anytime, anywhere.
         </p>
         <div className="flex gap-4">
-          <Button text="Get Started" btnType="btn-primary" />
-          <Button text="Learn more" />
+          <Button
+            text="Get Started"
+            onClickHandler={onclickHandler}
+            btnType="btn-primary"
+          />
+          <Button onClickHandler={onclickHandler2} text="Learn more" />
         </div>
       </div>
 
-      <div className="p-5 bg-neutral-content rounded-md">
+      <div className="p-5 gradient-bg rounded-md shadow-lg">
         <img src="src\assets\hero-image-removebg-preview.png" />
       </div>
     </div>

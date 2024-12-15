@@ -3,19 +3,18 @@
 @tailwind utilities;
 
 .gradient-bg {
-  background: #7f7fd5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #a599ff;
+  background-image: radial-gradient(
+      at 78% 78%,
+      hsla(210, 93%, 65%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 99% 61%, hsla(165, 87%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 59% 80%, hsla(277, 93%, 77%, 1) 0px, transparent 50%),
+    radial-gradient(at 2% 54%, hsla(190, 89%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 53% 48%, hsla(358, 66%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 40% 38%, hsla(152, 61%, 62%, 1) 0px, transparent 50%),
+    radial-gradient(at 70% 54%, hsla(343, 73%, 77%, 1) 0px, transparent 50%);
 }
 
 .custom-dimension {
