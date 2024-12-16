@@ -10,6 +10,7 @@ import AlertError from "./toast/alert";
 import SuccessMessage from "./toast/success";
 import InvalidError from "./toast/invalid";
 import Protected from "./AuthenticationPages/Protected";
+import Loading from "./Loading";
 
 export {
   Header,
@@ -24,4 +25,5 @@ export {
   AlertError,
   Protected,
   InvalidError,
+  Loading,
 };

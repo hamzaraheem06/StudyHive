@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./index";
+import { Button, Loading } from "./index";
 import { useNavigate } from "react-router-dom";
 
 function Hero() {

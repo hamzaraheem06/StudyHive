@@ -2,7 +2,10 @@ import React from "react";
 
 function AlertError({ error }) {
   return (
-    <div role="alert" className="alert alert-error">
+    <div
+      role="alert"
+      className="alert fixed w-80 h-20 right-6 top-16 alert-error"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6 shrink-0 stroke-current"

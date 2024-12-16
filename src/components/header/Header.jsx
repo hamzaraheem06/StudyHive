@@ -50,7 +50,7 @@ function Header() {
   ];
 
   return (
-    <div className="navbar shadow bg-base-100 fixed glassy darkTheme:glassyDark z-10 ">
+    <div className="navbar shadow bg-base-100 fixed darkTheme:glassyDark z-10 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
