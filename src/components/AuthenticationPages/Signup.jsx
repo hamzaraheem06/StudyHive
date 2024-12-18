@@ -44,10 +44,6 @@ function Signup() {
           type="text"
           {...register("name", {
             required: true,
-            validate: {
-              matchPattern: (value) =>
-                /^^[a-z0-9_-]{3,16}$/.test(value) || "Enter a valid username",
-            },
           })}
         />
 
@@ -65,14 +61,38 @@ function Signup() {
             },
           })}
         />
+
+        {/* <Input
+          label="Phone: "
+          placeHolder="Enter your phone number"
+          type="text"
+          {...register("phoneNumber", {
+            required: true,
+            validate: {
+              matchPattern: (value) =>
+                /^[a-z0-9_-]{3,16}$/.test(value) || "Email a valid number",
+            },
+          })}
+        />
+
+        <Input
+          label="Address: "
+          placeHolder="Enter your address"
+          type="text"
+          {...register("address", {
+            required: true,
+          })}
+        /> */}
+
         <Input
           label="Password: "
-          placeHolder="Enter your password"
+          placeHolder="Enter a password"
           type="password"
           {...register("password", {
             required: true,
           })}
         />
+
         <p className="text-sm opacity-65">
           Already have an account?{" "}
           <Link

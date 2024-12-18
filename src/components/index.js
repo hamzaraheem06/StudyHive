@@ -11,6 +11,7 @@ import SuccessMessage from "./toast/success";
 import InvalidError from "./toast/invalid";
 import Protected from "./AuthenticationPages/Protected";
 import Loading from "./Loading";
+import UserProfile from "./profile/UserProfile";
 
 export {
   Header,
@@ -26,4 +27,5 @@ export {
   Protected,
   InvalidError,
   Loading,
+  UserProfile,
 };
