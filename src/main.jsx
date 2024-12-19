@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
 import { Homepage, LogInPage, SignUpPage } from "./pages/index";
-import { Protected, UserProfile } from "./components/index.js";
+import { Protected } from "./components/index.js";
 
 const router = createBrowserRouter([
   {
