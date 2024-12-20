@@ -12,11 +12,16 @@ function JoinConference() {
   };
   return (
     <div className="hero mt-40 mb-20 max-w-[850px] mx-auto py-5 rounded-md">
-      <form onSubmit={handleSubmit(handleJoin)} className="flex flex-col gap-3">
+      <form
+        onSubmit={handleSubmit(handleJoin)}
+        className="flex flex-col gap-3 w-[300px] mx-auto"
+      >
         <Input
           label="Conference ID: "
-          placeHolder="Enter conference ID"
+          placeHolder="Enter your conference ID"
           type="number"
+          min="10000"
+          MAX="99999"
           {...register("conferenceID", {
             required: true,
           })}

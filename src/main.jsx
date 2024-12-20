@@ -5,7 +5,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
 import { Homepage, LogInPage, SignUpPage, Conferencepage } from "./pages/index";
-import { Protected, Conference, JoinConference } from "./components/index.js";
+import {
+  Protected,
+  Conference,
+  JoinConference,
+  Header,
+  Footer,
+} from "./components/index.js";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +32,11 @@ const router = createBrowserRouter([
       },
       {
         path: `/conference/:conferenceID`,
-        element: <Conferencepage />,
+        element: (
+          <>
+            <Conferencepage />
+          </>
+        ),
       },
       {
         path: "/login",
