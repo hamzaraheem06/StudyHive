@@ -1,8 +1,8 @@
 const config = {
   appwriteUrl: String(import.meta.env.VITE_APPWRITE_URL),
   projectId: String(import.meta.env.VITE_APPWRITE_PROJECT_ID),
-  //   databaseId: String(import.meta.env.VITE_APPWRITE_DATABASE_ID),
-  //   collectionId: String(import.meta.env.VITE_APPWRITE_COLLECTION_ID),
+  zegocloudID: import.meta.env.VITE_ZEGOCLOUD_APP_ID,
+  zegocloudSecret: String(import.meta.env.VITE_ZEGOCLOUD_SERVER_SECRET),
   //   bucketId: String(import.meta.env.VITE_APPWRITE_BUCKET_ID),
 };
 

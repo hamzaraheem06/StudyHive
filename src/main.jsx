@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
-import { Homepage, LogInPage, SignUpPage } from "./pages/index";
+import { Homepage, LogInPage, SignUpPage, Conferencepage } from "./pages/index";
 import { Protected } from "./components/index.js";
 
 const router = createBrowserRouter([
@@ -16,10 +16,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Homepage />,
       },
-      // {
-      //   path: `/profile`,
-      //   element: <UserProfile />,
-      // },
+      {
+        path: `/conference/:conferenceID`,
+        element: <Conferencepage />,
+      },
       {
         path: "/login",
         element: (

@@ -12,6 +12,7 @@ import InvalidError from "./toast/invalid";
 import Protected from "./AuthenticationPages/Protected";
 import Loading from "./Loading";
 import UserProfile from "./profile/UserProfile";
+import Conference from "./zegocloudservices/conference";
 
 export {
   Header,
@@ -28,4 +29,5 @@ export {
   InvalidError,
   Loading,
   UserProfile,
+  Conference,
 };
