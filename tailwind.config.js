@@ -9,7 +9,7 @@ export default {
     themes: [
       {
         mytheme: {
-          primary: "#d18efb",
+          primary: "#0e72ed",
 
           secondary: "#43d7f4",
 
@@ -30,7 +30,7 @@ export default {
       },
       {
         darkTheme: {
-          primary: "#d18efb",
+          primary: "#0e72ed",
 
           secondary: "#43d7f4",
 

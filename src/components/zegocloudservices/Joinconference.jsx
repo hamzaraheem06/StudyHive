@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Input, Button } from "../index";
 import { useForm } from "react-hook-form";
 
-function Conference() {
+function JoinConference() {
   const navigate = useNavigate();
   const { register, handleSubmit } = useForm();
 
@@ -14,19 +14,9 @@ function Conference() {
     <div className="hero mt-40 mb-20 max-w-[850px] mx-auto py-5 rounded-md">
       <form onSubmit={handleSubmit(handleJoin)} className="flex flex-col gap-3">
         <Input
-          label="Name: "
-          placeHolder="Enter your name"
-          type="name"
-          {...register("name", {
-            required: true,
-          })}
-        />
-        <Input
           label="Conference ID: "
-          placeHolder="Five-digit conference ID"
+          placeHolder="Enter conference ID"
           type="number"
-          min="10000"
-          MAX="99999"
           {...register("conferenceID", {
             required: true,
           })}
@@ -34,9 +24,9 @@ function Conference() {
         <div className="py-1">
           <Button
             btnType="btn-primary"
-            text="Create Conference"
-            className="text-lg text-white"
+            text="Join Conference"
             type="submit"
+            className="text-lg text-white"
           />
         </div>
       </form>
@@ -44,4 +34,4 @@ function Conference() {
   );
 }
 
-export default Conference;
+export default JoinConference;

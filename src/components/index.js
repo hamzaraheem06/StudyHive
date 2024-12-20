@@ -13,7 +13,8 @@ import Protected from "./AuthenticationPages/Protected";
 import Loading from "./Loading";
 import UserProfile from "./profile/UserProfile";
 import Conference from "./zegocloudservices/conference";
-
+import JoinConference from "./zegocloudservices/Joinconference";
+import ConferenceMenu from "./Home/ConferenceMenu.jsx";
 export {
   Header,
   Button,
@@ -30,4 +31,6 @@ export {
   Loading,
   UserProfile,
   Conference,
+  ConferenceMenu,
+  JoinConference,
 };

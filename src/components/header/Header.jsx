@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useParams } from "react-router";
 import authService from "../../appwrite/auth";
 import { logout } from "../../store/authSlice";
-import UserProfile from "../profile/UserProfile";
 
 function Header() {
   const userStatus = useSelector((state) => state.auth.status); // state.nameofslice.status

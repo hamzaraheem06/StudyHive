@@ -3,7 +3,6 @@ const config = {
   projectId: String(import.meta.env.VITE_APPWRITE_PROJECT_ID),
   zegocloudID: import.meta.env.VITE_ZEGOCLOUD_APP_ID,
   zegocloudSecret: String(import.meta.env.VITE_ZEGOCLOUD_SERVER_SECRET),
-  //   bucketId: String(import.meta.env.VITE_APPWRITE_BUCKET_ID),
 };
 
 export default config;

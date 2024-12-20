@@ -28,7 +28,6 @@ function App() {
     <div className="min-h-screen flex flex-col justify-between">
       <Header />
       <Outlet />
-      {/* <UserProfile /> */}
       <Footer />
     </div>
   );

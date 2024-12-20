@@ -1,5 +1,11 @@
 import React from "react";
-import { Hero, Features, Conference } from "../components/index";
+import {
+  Hero,
+  Features,
+  Conference,
+  ConferenceMenu,
+  UserProfile,
+} from "../components/index";
 import { useSelector } from "react-redux";
 
 function Homepage() {
@@ -8,7 +14,12 @@ function Homepage() {
   return (
     <>
       {userStatus ? (
-        <></>
+        <>
+          <div className=" max-w-[850px] mx-auto mt-40 mb-20 flex justify-center  items-center gap-20 ">
+            <UserProfile />
+            <ConferenceMenu />
+          </div>
+        </>
       ) : (
         <>
           <Hero />
