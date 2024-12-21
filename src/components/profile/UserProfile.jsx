@@ -1,13 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Button } from "../index";
-import { Link } from "react-router";
 
 function UserProfile() {
   const userData = useSelector((state) => state.auth.userData);
 
   return (
-    <div className="p-2 w-96 mx-auto min-h-[147px] rounded-2xl shadow">
+    <div className="p-2 w-1/2 min-h-[147px] rounded-2xl shadow">
       <div className="p-4 flex justify-start items-center gap-4">
         <div className="avatar">
           <div className="w-24 rounded-xl">
@@ -18,7 +16,7 @@ function UserProfile() {
         <div className="text-start">
           <h2 className="font-bold text-2xl">{userData.name}</h2>
           <p className="text-gray-400 text font-semibold">
-            <i class="bx bxl-gmail"></i> {userData.email}
+            <i className="bx bxl-gmail"></i> {userData.email}
           </p>
         </div>
       </div>

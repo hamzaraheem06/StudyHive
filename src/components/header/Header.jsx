@@ -206,7 +206,7 @@ function Header() {
                 </li> */}
                 <li>
                   <Link onClick={logoutHandler} className="text-base">
-                    <i class="bx bx-log-out"></i>
+                    <i className="bx bx-log-out"></i>
                     Logout
                   </Link>
                 </li>

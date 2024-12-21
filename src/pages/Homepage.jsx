@@ -8,6 +8,7 @@ import {
   Chat,
 } from "../components/index";
 import { useSelector } from "react-redux";
+import { Link } from "react-router";
 
 function Homepage() {
   const userStatus = useSelector((state) => state.auth.status);
@@ -16,9 +17,19 @@ function Homepage() {
     <>
       {userStatus ? (
         <>
-          <div className=" max-w-[850px] mx-auto mt-40 mb-20 flex justify-center  items-center gap-20 ">
-            <UserProfile />
-            <ConferenceMenu />
+          <div className=" w-[850px] mx-auto  mt-24 mb-20 flex flex-col justify-between gap-16">
+            <div className="breadcrumbs text-sm">
+              <ul>
+                <li className="font-medium text-primary">
+                  <Link to="/">Home</Link>
+                </li>
+                <li></li>
+              </ul>
+            </div>
+            <div className=" w-[850px] mx-auto  flex justify-between  items-center gap-20 ">
+              <UserProfile />
+              <ConferenceMenu />
+            </div>
           </div>
         </>
       ) : (
