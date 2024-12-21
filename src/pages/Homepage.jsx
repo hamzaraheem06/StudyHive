@@ -5,6 +5,7 @@ import {
   Conference,
   ConferenceMenu,
   UserProfile,
+  Chat,
 } from "../components/index";
 import { useSelector } from "react-redux";
 

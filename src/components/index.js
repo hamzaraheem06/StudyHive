@@ -15,6 +15,8 @@ import UserProfile from "./profile/UserProfile";
 import Conference from "./zegocloudservices/conference";
 import JoinConference from "./zegocloudservices/Joinconference";
 import ConferenceMenu from "./Home/ConferenceMenu.jsx";
+import Chat from "./zegocloudservices/Chat.jsx";
+
 export {
   Header,
   Button,
@@ -33,4 +35,5 @@ export {
   Conference,
   ConferenceMenu,
   JoinConference,
+  Chat,
 };
