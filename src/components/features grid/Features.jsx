@@ -109,7 +109,7 @@ function Features() {
     //   </ul>
     // </div>
 
-    <div id="features" className="py-24 sm:py-32">
+    <div id="features" className="pt-10 sm:pt-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl lg:text-balance">

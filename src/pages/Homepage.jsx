@@ -68,15 +68,16 @@ function Homepage() {
                       Mobile friendly
                     </p>
                     <p className="mt-2 max-w-lg text-sm/6  max-lg:text-center">
-                      Anim aute id magna aliqua ad ad non deserunt sunt. Qui
-                      irure qui lorem cupidatat commodo.
+                      Access your account from any device, and it would still be
+                      pleasing to the eyes unlike SOME <strong>L</strong>earning{" "}
+                      <strong>M</strong>anagement <strong>S</strong>ystems.
                     </p>
                   </div>
                   <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
                     <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
                       <img
                         className="size-full object-cover object-top"
-                        src="https://tailwindui.com/plus/img/component-images/bento-03-mobile-friendly.png"
+                        src="src\assets\image.png"
                         alt=""
                       />
                     </div>

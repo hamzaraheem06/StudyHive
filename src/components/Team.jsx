@@ -18,7 +18,7 @@ const team = [
 
 export default function Team() {
   return (
-    <div className="py-24 sm:py-32">
+    <div className="py-10 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
         <div className="max-w-xl">
           <h2 className="text-pretty text-3xl font-semibold tracking-tight  sm:text-4xl">

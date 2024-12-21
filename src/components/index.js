@@ -19,6 +19,7 @@ import Chat from "./zegocloudservices/Chat.jsx";
 import Todo from "./todoList/Todo.jsx";
 import AddTodo from "./todoList/addTodo.jsx";
 import Team from "./Team.jsx";
+import Working from "./zegocloudservices/Working.jsx";
 
 export {
   Header,
@@ -42,4 +43,5 @@ export {
   Todo,
   AddTodo,
   Team,
+  Working,
 };
