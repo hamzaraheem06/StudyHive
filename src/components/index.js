@@ -16,6 +16,9 @@ import Conference from "./zegocloudservices/conference";
 import JoinConference from "./zegocloudservices/Joinconference";
 import ConferenceMenu from "./Home/ConferenceMenu.jsx";
 import Chat from "./zegocloudservices/Chat.jsx";
+import Todo from "./todoList/Todo.jsx";
+import AddTodo from "./todoList/addTodo.jsx";
+import Team from "./Team.jsx";
 
 export {
   Header,
@@ -36,4 +39,7 @@ export {
   ConferenceMenu,
   JoinConference,
   Chat,
+  Todo,
+  AddTodo,
+  Team,
 };

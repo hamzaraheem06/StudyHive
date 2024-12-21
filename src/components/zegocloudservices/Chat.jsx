@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { ZIMKitManager, Common } from "@zegocloud/zimkit-react";
-// import "@zegocloud/zimkit-react/index.css";
+// import "@zegocloud/zimkit-react/index.css"
 
 import config from "../../config/config";
 

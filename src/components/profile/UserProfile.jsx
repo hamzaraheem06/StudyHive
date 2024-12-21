@@ -5,8 +5,8 @@ function UserProfile() {
   const userData = useSelector((state) => state.auth.userData);
 
   return (
-    <div className="p-2 w-1/2 min-h-[147px] rounded-2xl shadow">
-      <div className="p-4 flex justify-start items-center gap-4">
+    <div className=" rounded-2xl">
+      <div className="flex justify-start items-center gap-4">
         <div className="avatar">
           <div className="w-24 rounded-xl">
             <img src="https://avatars.githubusercontent.com/u/161157848?v=4" />

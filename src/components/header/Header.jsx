@@ -180,7 +180,7 @@ function Header() {
                 tabIndex={0}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-                <li className="dropdown dropdown-left">
+                {/* <li className="dropdown dropdown-end">
                   <Link role="button" className="text-base">
                     <i className="bx bxs-user"></i>
                     Profile
@@ -198,7 +198,7 @@ function Header() {
                       <p>{userData.email}</p>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 {/* <li>
                   <Link className="text-base">
                     <i className="bx bxs-cog"></i> Settings
