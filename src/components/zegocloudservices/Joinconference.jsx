@@ -39,6 +39,26 @@ function JoinConference() {
         </ul>
       </div>
 
+      <div role="alert" className="alert bg-transparent">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          className="stroke-info h-6 w-6 shrink-0"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
+        <span>
+          After hanging the conference, to go back to home page. Click on the
+          back arrow once and refresh the browser.
+        </span>
+      </div>
+
       <div className="hero max-w-[850px] mx-auto py-5 rounded-md">
         <form
           onSubmit={handleSubmit(handleJoin)}
@@ -63,26 +83,6 @@ function JoinConference() {
             />
           </div>
         </form>
-      </div>
-
-      <div role="alert" className="alert">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          className="stroke-info h-6 w-6 shrink-0"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          ></path>
-        </svg>
-        <span>
-          After hanging the conference, go back to home by clicking on the back
-          arrow and refreshing the browser.
-        </span>
       </div>
 
       <Working />

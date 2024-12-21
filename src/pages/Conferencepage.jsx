@@ -2,16 +2,13 @@ import React, { useState } from "react";
 import { useParams } from "react-router";
 import { ZegoUIKitPrebuilt } from "@zegocloud/zego-uikit-prebuilt";
 import { ZegoSuperBoardManager } from "zego-superboard-web";
-import { useNavigate } from "react-router-dom";
 
 import config from "../config/config";
 import { useSelector } from "react-redux";
 
 function Conferencepage() {
-  const navigate = useNavigate();
   const { conferenceID } = useParams();
   const user = useSelector((state) => state.auth.userData);
-  console.log(user);
 
   const conference = async (element) => {
     const appId = config.zegocloudID;
@@ -35,10 +32,6 @@ function Conferencepage() {
       ],
       scenario: {
         mode: ZegoUIKitPrebuilt.OneONoneCall,
-      },
-      showScreenSharingButton: true,
-      onLeaveRoom: () => {
-        navigate("/");
       },
     });
   };
