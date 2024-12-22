@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate, useParams } from "react-router";
+import { Link, useNavigate } from "react-router";
 import authService from "../../appwrite/auth";
 import { logout } from "../../store/authSlice";
 
@@ -49,8 +49,6 @@ function Header() {
       active: userStatus,
     },
   ];
-
-  const userData = useSelector((state) => state.auth.userData);
 
   return (
     <div className="navbar shadow bg-base-100 fixed glassy z-10 ">
@@ -172,7 +170,7 @@ function Header() {
                 <div className="w-10 rounded-full">
                   <img
                     alt="Tailwind CSS Navbar component"
-                    src="https://cdn-icons-png.flaticon.com/128/3906/3906577.png"
+                    src="https://avatars.githubusercontent.com/u/161157848?v=4"
                   />
                 </div>
               </div>
@@ -180,30 +178,6 @@ function Header() {
                 tabIndex={0}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-                {/* <li className="dropdown dropdown-end">
-                  <Link role="button" className="text-base">
-                    <i className="bx bxs-user"></i>
-                    Profile
-                  </Link>
-                  <ul
-                    tabIndex={0}
-                    className="dropdown-content menu bg-base-100 rounded-box z-[1] w-60 p-2 shadow"
-                  >
-                    <li className="font-bold text-base flex flex-row">
-                      <i className="bx bx-user"></i>
-                      <p>{userData.name}</p>
-                    </li>
-                    <li className="font-bold text-base flex flex-row">
-                      <i className="bx bx-envelope"></i>
-                      <p>{userData.email}</p>
-                    </li>
-                  </ul>
-                </li> */}
-                {/* <li>
-                  <Link className="text-base">
-                    <i className="bx bxs-cog"></i> Settings
-                  </Link>
-                </li> */}
                 <li>
                   <Link onClick={logoutHandler} className="text-base">
                     <i className="bx bx-log-out"></i>

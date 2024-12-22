@@ -12,7 +12,7 @@ import InvalidError from "./toast/invalid";
 import Protected from "./AuthenticationPages/Protected";
 import Loading from "./Loading";
 import UserProfile from "./profile/UserProfile";
-import Conference from "./zegocloudservices/conference";
+import CreateConference from "./zegocloudservices/createconference.jsx";
 import JoinConference from "./zegocloudservices/Joinconference";
 import ConferenceMenu from "./Home/ConferenceMenu.jsx";
 import Chat from "./zegocloudservices/Chat.jsx";
@@ -36,7 +36,7 @@ export {
   InvalidError,
   Loading,
   UserProfile,
-  Conference,
+  CreateConference,
   ConferenceMenu,
   JoinConference,
   Chat,

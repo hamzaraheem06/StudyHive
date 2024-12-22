@@ -7,10 +7,8 @@ import store from "./store/store.js";
 import { Homepage, LogInPage, SignUpPage, Conferencepage } from "./pages/index";
 import {
   Protected,
-  Conference,
+  CreateConference,
   JoinConference,
-  Header,
-  Footer,
 } from "./components/index.js";
 
 const router = createBrowserRouter([
@@ -24,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: `/conference/create`,
-        element: <Conference />,
+        element: <CreateConference />,
       },
       {
         path: `/conference/join`,

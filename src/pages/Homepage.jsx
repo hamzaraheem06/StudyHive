@@ -2,10 +2,8 @@ import React from "react";
 import {
   Hero,
   Features,
-  Conference,
   ConferenceMenu,
   UserProfile,
-  Chat,
   AddTodo,
   Todo,
   Team,
@@ -54,7 +52,7 @@ function Homepage() {
           </div>
           <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
             <h2 className="text-center text-base/7 font-semibold text-primary">
-              Something Here
+              Something Here is
             </h2>
             <p className="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight sm:text-5xl">
               Everything you need at a single place
@@ -65,7 +63,7 @@ function Homepage() {
                 <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
                   <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
                     <p className="mt-2 text-lg font-medium tracking-tight  max-lg:text-center">
-                      Mobile friendly
+                      Responsive Design
                     </p>
                     <p className="mt-2 max-w-lg text-sm/6  max-lg:text-center">
                       Access your account from any device, and it would still be

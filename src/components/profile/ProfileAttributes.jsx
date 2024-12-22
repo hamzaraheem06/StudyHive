@@ -1,10 +1,6 @@
 import React from "react";
-import { Input, Button, InvalidError } from "../index";
-import { Link, useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { login as authLogin } from "../../store/authSlice";
-import authService from "../../appwrite/auth";
-import { useForm } from "react-hook-form";
+import { Input, Button } from "../index";
+import { useSelector } from "react-redux";
 
 function ProfileAttributes() {
   const dataUser = useSelector((state) => state.auth.userData);
