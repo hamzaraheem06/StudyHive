@@ -17,7 +17,7 @@ import JoinConference from "./zegocloudservices/Joinconference";
 import ConferenceMenu from "./Home/ConferenceMenu.jsx";
 import Chat from "./zegocloudservices/Chat.jsx";
 import Todo from "./todoList/Todo.jsx";
-import AddTodo from "./todoList/addTodo.jsx";
+import AddTodo from "./todoList/AddTodo.jsx";
 import Team from "./Team.jsx";
 import Working from "./zegocloudservices/Working.jsx";
 
