@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [import("daisy-ui")],
+  plugins: [require("daisyui")],
   daisyui: {
     themes: [
       {
