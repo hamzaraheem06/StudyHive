@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 function LogInPage() {
   return (
-    <div className=" w-[850px] mx-auto mt-24 mb-20 flex flex-col justify-between gap-16">
+    <div className="mx-auto mt-24 mb-20 flex flex-col justify-between gap-16">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -18,7 +18,7 @@ function LogInPage() {
         />
       </div>
 
-      <div className="breadcrumbs text-sm">
+      <div className="mt-24 ml-10 breadcrumbs text-sm">
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -34,7 +34,7 @@ function LogInPage() {
 
       <div className="hero max-w-[850px] mx-auto py-5 rounded-md">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="flex items-center justify-center overflow-hidden rounded-md lg:text-left">
+          <div className="sm:flex items-center justify-center overflow-hidden rounded-md hidden lg:text-left">
             <img src="src\assets\logo.png" alt="logo" />
           </div>
           <Login />
