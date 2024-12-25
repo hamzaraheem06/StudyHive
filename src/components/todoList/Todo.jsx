@@ -10,7 +10,7 @@ function Todo() {
 
   return (
     <>
-      <ul className="list-none w-80 h-96 overflow-y-auto">
+      <ul className="list-none min-w-72 max-w-80 h-96 overflow-y-auto">
         {todo.map((todo) => (
           <li
             className="mt-4  flex justify-between shadow-sm items-center px-4 py-2 rounded-sm"
