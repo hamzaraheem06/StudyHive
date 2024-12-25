@@ -132,7 +132,7 @@ function Homepage() {
                   </div>
                   <div className="relative min-h-[30rem] w-full grow">
                     <div className="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl">
-                      <div className="flex flex-col mx-auto items-start ring-1 ring-white/5">
+                      <div className="flex flex-col justify-center items-start ring-1 ring-white/5">
                         <Provider store={store}>
                           <AddTodo />
                           <Todo />

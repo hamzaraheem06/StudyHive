@@ -25,7 +25,7 @@ function App() {
   return loading ? (
     <Loading />
   ) : (
-    <div className="min-h-screen flex flex-col justify-between">
+    <div className="min-h-screen w-full flex flex-col justify-between">
       <Header />
       <Outlet />
       <Footer />
